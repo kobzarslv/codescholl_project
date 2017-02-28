@@ -1,3 +1,10 @@
 rake db:create
 rails g integration_test listing_books
 rails generate model book title rating:integer --no-fixture
+curl -I https://api.github.com - обращение к серверу и получение ответа
+gem 'spring', group: :development
+bundle exec spring binstub --all
+bin/spring status
+time rake routes
+time bin/rake routes
+
