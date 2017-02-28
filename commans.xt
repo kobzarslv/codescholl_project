@@ -1,0 +1,3 @@
+rake db:create
+rails g integration_test listing_books
+rails generate model book title rating:integer --no-fixture
