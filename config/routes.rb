@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :books, exept: [:destroy,:update]
+  resources :finished_books
 end
 
 
