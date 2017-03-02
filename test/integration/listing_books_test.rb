@@ -14,7 +14,7 @@ class ListingBooksTest < ActionDispatch::IntegrationTest
     assert_equal 200, response.status
     assert_equal Mime[:json], response.content_type
     
-    assert_equal Book.count, JSON.parse(response.body).size
+    assert_equal Book.count, json(response.body).size
   end
 
   test 'lists top rated books' do
@@ -22,7 +22,7 @@ class ListingBooksTest < ActionDispatch::IntegrationTest
   assert_equal 200, response.status
   assert_equal Mime[:json], response.content_type
   # test "the truth" do
-  assert_equal 1,JSON.parse(response.body).size
+  assert_equal 1, json(response.body).size
   end  
   #   assert true
 end
